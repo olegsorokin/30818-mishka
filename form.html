@@ -3,19 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
   <header class="page-header">
     <div class="page-header__wrapper">
       <h1 class="visually-hidden">Мишка</h1>
-      <div class="page-header__logo"><img src="#" alt="Mishka"></div>
+      <div class="page-header__logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></div>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__list main-nav__list--activ"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item main-nav__list main-nav__list--activ"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
             <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
             <li class="main-nav__item"><a href="#">Корзина: <span class="main-nav__goods">пока пуста</span></a></li>
@@ -27,11 +30,12 @@
   </header>
 
   <main class="page-main">
+    <p class="form__p">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form action="" class="order-form">
       <fieldset class="order-form__type">
         <legend>Тип</legend>
-        <label><input type="radio" checked>Аксессуар для интерьера</label>
-        <label><input type="radio">Детская игрушка</label>
+        <label><input name="order-form__radio" type="radio" checked>Аксессуар для интерьера</label>
+        <label><input name="order-form__radio" type="radio">Детская игрушка</label>
       </fieldset>
       <fieldset class="order-color">
         <legend>Цвет</legend>
@@ -60,7 +64,7 @@
         <legend>Доп</legend>
         <textarea name="" id="" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </fieldset>
-      <button type="submit" class="btn order-form__btn">Отправить заказ</button>
+      <button type="submit" class="btn buy__btn">Отправить заказ</button>
     </form>
   </main>
 
