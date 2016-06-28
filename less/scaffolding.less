@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans.woff') format('woff'),
+       url('../fonts/opensans.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../fonts/opensansbold.woff') format('woff'),
+       url('../fonts/opensansbold.woff2') format('woff2');
+}
+
+body {
+	font-family: 'OpenSans', sans-serif;
+	background: @bg-lightgrey url('../img/hero-mobile@1x.jpg') no-repeat 50% 0px;
+	background-size: 575px auto;
+	min-height: 775px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media @tablet-widths {
+  body {
+  	background-size: 768px auto;
+  }
+}
+
+@media @desktop-widths {
+  body {
+    background-size: 1150px auto;
+  }
+}
