@@ -1,0 +1,70 @@
+.video {
+	font-size: 0;
+  padding: 0;
+
+  &__wrapper {
+    position: relative;
+
+    img {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+  }
+
+  &__info {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+  }
+}
+
+@media @tablet-widths {
+  .video {
+
+    &__wrapper {
+      img {
+        padding-bottom: 30px;
+      }
+    }
+
+    &__title {
+      position: absolute;
+      left: 50px;
+      bottom: 70px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .video {
+  .clearfix();
+
+    &__wrapper {
+      img {
+        float: left;
+        width: 682px;
+        padding: 0;
+        padding-bottom: 30px;
+      }
+    }
+
+    &__title {
+      position: static;
+      float: right;
+      width: 350px;
+    }
+
+    &__info {
+      float: right;
+      width: 350px;
+    }
+  }
+}

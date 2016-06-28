@@ -1,0 +1,46 @@
+.page-footer {
+	.container();
+  .clearfix();
+  font-size: 0;
+  text-align: center;
+
+  &__logo {
+    vertical-align: top;
+    display: none;
+  }
+
+}
+
+.social {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.copyright {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+@media @tablet-widths {
+  .page-footer {
+
+    &__logo {
+      width: 33.3%;
+      display: inline-block;
+      float: left;
+    }
+
+  }
+  .social {
+    width: 33.3%;
+    float: left;
+  }
+
+  .copyright {
+    width: 33.3%;
+    float: right;
+  }
+
+}

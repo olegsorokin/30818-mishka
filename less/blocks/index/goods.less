@@ -1,0 +1,70 @@
+.goods {
+  .clearfix();
+  font-size: 0;
+  padding: 0 30px;
+
+  &__item {
+    position: relative;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 24px;
+  }
+
+  &__label-week {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    color: #63d1bb;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+  }
+
+  img {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__specifications {
+    font-size: 14px;
+  }
+
+  &__buy {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 16px;
+  }
+
+}
+
+@media @tablet-widths {
+  .goods {
+
+  &__description {
+    width: 290px;
+  }
+
+  }
+}
+
+@media @desktop-widths {
+  .goods {
+    padding: 0 50px;
+
+    &__label-week {
+      float: left;
+    }
+
+  }
+}
