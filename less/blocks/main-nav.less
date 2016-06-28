@@ -1,0 +1,44 @@
+.main-nav {
+	.container();
+  font-size: 0;
+}
+
+.main-nav__list,
+.main-nav__user-list,
+.main-nav__new-goods,
+.main-nav__free {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+}
+
+.main-nav__new-goods,
+.main-nav__free {
+  display: none;
+}
+
+.main-nav__item {
+  font-size: 16px;
+}
+
+@media @tablet-widths {
+  .main-nav__list {
+    width: 370px;
+  }
+  .main-nav__free {
+    display: inline-block;
+    font-size: 14px;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media @desktop-widths {
+  .main-nav__list {
+    width: 750px;
+  }
+  .main-nav__new-goods {
+    display: inline-block;
+  }
+}

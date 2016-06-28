@@ -1,0 +1,9 @@
+@bg-darkgrey: #f1f1f1;
+@bg-lightgrey: #ffffff;
+@tablet-widths: ~"(min-width: 768px)";
+@desktop-widths: ~"(min-width: 1150px)";
+
+.color-block(@color1: 0, @color2: 0, @color3: 0) {
+  box-shadow: 1px 1px 1px rgb(@color1, @color2, @color3);
+  background: rgba(@color1, @color2, @color3, .1);
+}

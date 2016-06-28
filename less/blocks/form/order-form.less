@@ -1,0 +1,136 @@
+
+.form__p {
+  padding: 0 20px;
+}
+
+.order-form {
+  padding: 0 30px;
+
+  &__field-warning {
+    display: none;
+  }
+}
+
+.order-form__type,
+.order-color,
+.order-name,
+.order-tel,
+.order-email,
+.order-write {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  border: none;
+  border-top: 1px solid #63d1bb;
+  legend {
+    color: #63d1bb;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 20px;
+  }
+  label {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000000;
+    padding: 15px 0;
+    outline: none;
+  }
+  input[type="checkbox"] {
+    margin: 20px 0;
+    margin-right: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    outline: none;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+}
+
+.order-write {
+  position: relative;
+  textarea {
+    width: 100%;
+  }
+}
+
+@media @tablet-widths {
+  .form__p {
+    padding: 0;
+  }
+
+  .order-form {
+    padding: 0;
+
+    &__field-warning {
+      display: inline-block;
+    }
+  }
+
+  .order-form__type,
+  .order-color,
+  .order-name {
+    border: none;
+    position: relative;
+    padding: 50px 0;
+    margin: 0;
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+     width: 350px;
+    }
+
+    &:nth-of-type(2n) {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .order-tel,
+  .order-email {
+    border: none;
+    position: relative;
+    background-color: #f1f1f1;
+    padding: 50px 0;
+    margin: 0;
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+     width: 50%;
+    }
+  }
+
+  legend {
+    position: absolute;
+    top: 20px;
+  }
+
+  .order-name {
+    label {
+      margin-left: 167px;
+      width: 500px;
+    }
+    input {
+      margin-left: 25px;
+      width: auto;
+    }
+  }
+
+  .order-write {
+  position: relative;
+  textarea {
+    margin-left: 167px;
+    width: 60%;
+  }
+}
+
+}
