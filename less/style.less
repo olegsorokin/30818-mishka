@@ -2,6 +2,7 @@
 @import url('../less/scaffolding.less');
 @import url('../less/mixins.less');
 
+@import url('../less/blocks/page-header.less');
 @import url('../less/blocks/main-nav.less');
 @import url('../less/blocks/page-main.less');
 
@@ -18,6 +19,16 @@
 
 @import url('../less/blocks/page-footer.less');
 
-.visually-hidden {
-  display: none;
+.visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
